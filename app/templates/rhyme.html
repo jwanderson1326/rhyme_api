@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Type An English Word and I Will Return All Words that Rhyme</h3>
+
+<form method="POST">
+	<input type="text" name="word_rhyme">
+	<input type="submit">
+</form>
+
+<h4>The Rhyming Words Are: {{ chosen }} </h4>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3>Type Some Random Words and I Will Return a Random Word</h3>
+
+<form method="POST">
+	<input type="text" name="word_list">
+	<input type="submit">
+</form>
+
+<h4>The chosen word is: {{ chosen }} </h4>
+
+{% endblock %}
